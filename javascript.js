@@ -4,7 +4,7 @@ const form = document.querySelector('form')
 
 const getSiteLatLong = async (name) => {
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${name}&appid=${APIKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${name}&appid=${APIKey}`
   )
   const data = await response.json()
 
